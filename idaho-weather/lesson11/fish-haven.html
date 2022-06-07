@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>How is the weather today</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+</head>
+<body>
+    <div class="city-body">
+    <header class="clearfix"> 
+        
+        <img id=logo src="images/weather-icon.png" alt="logo" srcset="images/weather-icon.png" >
+         
+
+        <section class="headings">
+            <h1 id="site-title">How is the weather today</h1>
+            <div class="motto">The precise forecast</div>
+        </section>
+    </header>
+    
+        <nav>
+            <button onclick="toggleMenu()">&#9776 </button>
+            <ul id="primaryNav" class="hide">
+
+            <li><a href=index.html>Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li ><a href="soda-springs.html">Soda Springs</a></li>
+            <li class ="active"><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+</div>
+    <section id="friday-banner">
+        <p> Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+    <h1 class="site-title">Fish Haven Idaho</h1>
+    <picture class="fish-img">
+                
+        <img id="fish-image" src="images/fishhaven.jpg"  alt="Bear Lake Fish Haven Crater Lagoon ">
+       
+                        </picture>
+
+     <section class="wave">
+        <div class="wave-section"></div>
+    </section>
+    <main>
+        
+    <div class="pages-section">
+           
+     <section class="current-weather" id="current-fish">
+        <h2>Weather Summary</h2>
+            <p>Currently :  <span id="current-2"></span>&nbsp;&nbsp;<span id="current-temp"></span>&deg;F</p>
+            
+            <p>High: <span id="high-temp">32</span>&deg;F</p>
+            <p>Wind Chill:&nbsp;<span id="windChillOutput"></span> </p>
+            <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
+            <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
+        </section>
+       
+
+        <h1 id="forecast-title">Five Day Forecast</h1>
+        <section class="forecast">
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek1"></span></p>
+             <img src="" alt="" id="icon1"> 
+             <p><span id="fiveDayForecast1"></span>&deg;F</p>
+            </div>
+
+            <div class="forecast-day">
+             <p ><span id="dayofWeek2"></span></p>
+             <img src="" alt="" id="icon2"> 
+             <p >  <span id="fiveDayForecast2"></span>&deg;F</p>
+               
+            </div>
+             <div class="forecast-day">
+             <p ><span id="dayofWeek3"></span></p>
+             <img src="" alt="" id="icon3"> 
+             <p ><span id="fiveDayForecast3"></span>&deg;F</p>
+            </div> 
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek4"></span></p>
+             <img src="" alt="" id="icon4">
+             <p ><span id="fiveDayForecast4"></span>&deg;F</p>
+            </div> 
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek5"></span></p>
+             <img src="" alt="" id="icon5"> 
+             <p><span id="fiveDayForecast5"></span>&deg;F</p>
+            </div>
+            
+          
+      
+    </section>
+    <h1 id="events-title">Upcoming Events</h1>
+    <div class="fish-events" id="events"></div>
+    <section class="article-section">
+        <div class="article-city">
+            <img class="article-image" id="fish-article-image" src="images/bear lake fish haven.jpg" alt="Bear Lake Fish Haven Idaho sign text description of Fish Haven">
+            
+            <h1 class="article-title ">Little Fish Haven, Idaho, is paradise for residents</h1>  <p class="author">by Kurt Friedemann Idaho State Journal</p> 
+            <p>FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake. In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.
+        
+                The little town sits just on the Idaho side of U.S. Highway 89 tucked in between Bear Lake's west side and the mountains.
+    
+                It's not technically a city or a town, it's really nothing more than the proverbial wide spot in the road. But people call it a town even though there isn't a city council, just the Bear Lake County Commission that oversees development there.
+                
+                Only 50 to 100 people call it home, depending on the weather.
+                
+                Vic Tilt, co-owner of Gladys' Place, is one of the few year-around residents and said the population drops quickly when things get cold.
+                
+                The winter evacuation isn't much of a worry for Tilt, 60, because his store is the only one around. The nearest other store is in Montpelier, about 45 minutes away.
+                
+                Gladys' Place is also only a few minutes from the Utah border and has become quite a lottery spot. The little store is the third- and fourth-biggest lottery ticket seller in Idaho, selling about 500,000 tickets a year.
+                
+                "We've got a whole mall in 1,000 square feet," Tilt said.
+                
+                Because it is the only business in Fish Haven, Gladys' Place sells it all — liquor, groceries, videos, tourist gifts and some of the best deli sandwiches around — and also serves as post office, Gladys Tilt said.
+                
+                Yep, you guessed it, Gladys' Place is 58-year-old Gladys Tilt's place. The Tilts opened the little store in April 1994 and have been steeped in tourist fun and local tradition ever since.
+                
+                Before 1994 the couple had been working for a corporation in Salt Lake City.
+                
+                On one of their traditional summer trips they passed through Fish Haven and fell in love with the town and Bear Lake. The couple decided to move their fifth-wheel camper trailer to the area, bought a piece of ground and parked it.
+                
+                That wasn't enough.
+                
+                "We were spending almost every bit of free time we had up here," Gladys said. "We heard that the store might be sold and so we decided to go for it."
+                
+                They gave up everything in the city — their jobs, home, and moved to Fish Haven in just a few months.
+                
+                "We sold our house for cash and moved," Vic said. "'We haven't looked back. I was born in Salt Lake City, but now you couldn't drag me back."
+                
+                Since their move, Fish Haven has begun to grow up around them. It was already a small tourist spot, but since the introduction of Bear Lake West, a cabin development south of Fish Haven, things have really begun to grow.
+                
+                It's the reason Ruth and Scott Stokes are now spending more of their time in Fish Haven. The Stokeses have a home in Ogden but are considering making the town along Bear Lake's western shore their permanent home.
+                
+                The couple discovered the spot because Scott Stokes is a contractor and began helping a fellow builder put together cabins in Bear Lake West.
+                
+                The Stokeses fell in love with the people and the atmosphere in Fish Haven.
+                
+             </br> </br>Read the full article at <a class="links" href="hhttps://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents">Deseret News</a></p>
+        </div>
+           
+    </section>
+
+    <h1 id="contact-title">Contact information</h1>
+    <section class="contact-section">
+     
+        <div class="map">
+            <iframe class= "preston-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.958830505257!2d-111.40486806799149!3d42.03803991735482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20Idaho%2083287%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1654634778660!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" atl="fish haven map"></iframe>
+            
+        </div>
+        <div class="contact">
+            
+            <div class= "contact-group">
+            <img class="contact-icons" src="images/location.png" alt="location-icon">
+            <p >49 N State St Ste 102, Preston, ID</p> 
+            </div>
+            <div class= "contact-group">
+            <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+            <p>000-111-222</p>
+            </div>
+            <div class= "contact-group">
+            <img class="contact-icons"src="images/email.png" alt="email-icon" >
+            <p> howishtheweathertoday@info.com</p>
+            </div>
+            <div class= "contact-group">
+                <a href="https://www.facebook.com/" >
+                <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/">
+                <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+                </div> 
+           
+    
+         
+    </section>
+</div>
+
+    </main>
+    <footer>
+        <p class="footer-text">&copy; <span id="date"></span> | <a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
+           
+         </footer>
+            <script src="JS/script.js"></script>
+            <script> currentW('5585010');
+                forecast('5585010');
+                getEvents("Fish Haven");</script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+            </script>
+      
+    
+</body>
+</html>

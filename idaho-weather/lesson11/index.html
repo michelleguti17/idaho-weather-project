@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How is the weather today</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+ 
+</head>
+<body>
+   <section class="gradient-background">
+    <header class="clearfix"> 
+        
+        <img id=logo src="images/weather-icon.png" alt="logo" srcset="images/weather-icon.png" >
+         
+
+        <section class="headings">
+            <h1 id="site-title">How is the weather today</h1>
+            <div class="motto">The precise forecast</div>
+        </section>
+    </header>
+  
+        <nav>
+            <button onclick="toggleMenu()">&#9776</button>
+            <ul id="primaryNav" class="hide">
+
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+    <section id="friday-banner">
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+  <div>
+    <h1 class="site-title" id="home-title">How is the</br> weather today </h1>
+    <div class="border-photo">
+        <img id="idaho-home" src="images/idaho.jpg"  alt="idaho moutains field landscape">
+    </section> 
+     </div>
+            <section class="wave">
+                <div id= "wave-home "class="wave-section"></div>
+            </section>
+  
+        
+
+    <main>
+    
+        <div class="pages-section">
+           
+            <h1 class="cities-title"> Weather in different cities</h1>
+            
+            <div class="places">
+              
+            </div>
+       
+            
+        </div>
+
+   
+<div class="article-section">
+        <div class="article-city">
+            <img class= "article-image" id="home-article-image" src="images/boise.jpg" alt="Boise City in idaho. Buildings in Boise Ihado.">
+            
+            <h1 class="article-title ">The 5 Best Spring Adventure Destinations in Idaho</h1>  <p class="author">by The Outbound Collective</p> 
+            <p>Long, sunny days are just around the corner.
+
+                We love adventures in the snow, but winters in Idaho can be long and cold and we know you’re getting just as excited as we are for springtime. With the weather warming up and the days growing longer, now is the time to plan your trip to explore Idaho this spring. Gather your friends and family and get ready to make some memories at all of these beautiful locations.</br> </br>Read the full article at <a class="links" href="https://www.theoutbound.com/theoutbound/the-5-best-spring-adventure-destinations-in-idaho">The Outbound Collective</a></p>
+        </div>
+           
+</div>
+
+
+<h1 id="contact-title">Contact information</h1>
+
+    <div class="contact-section">
+    
+                <div>
+                <iframe class= "preston-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47359.8878046865!2d-111.91122878982105!3d42.10762099205315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1654137597903!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="preston map"></iframe>
+                </div>
+
+             <div class="contact">
+                    
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/location.png" alt="location-icon">
+                    <p >49 N State St Ste 102, Preston, ID</p> 
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+                    <p>000-111-222</p>
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/email.png" alt="email-icon" >
+                    <p> howishtheweathertoday@info.com</p>
+                    </div>
+                    <div class= "contact-group">
+                        <a href="https://www.facebook.com/" >
+                        <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                        <a href="https://www.instagram.com/">
+                        <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
+                        </a>
+                    </div>
+         </div> 
+                   
+            
+    </div>             
+    </div>
+
+            </main>
+            <footer>
+                <p class="footer-text">&copy; <span id="date"></span> |<a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
+                 </footer>
+                    <script src="JS/script.js"> </script>
+                    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+                    <script>
+                        WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+                        currentWeather('5604473');
+                        forecast('5604473');
+                        getTownEvents("Preston");
+                    </script>
+        
+              
+            
+        </body>
+        </html

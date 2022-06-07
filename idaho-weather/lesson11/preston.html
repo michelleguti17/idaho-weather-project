@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>How is the weather today</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+</head>
+<body >
+   <div class="city-body">
+    <header class="clearfix"> 
+        <img id=logo src="images/weather-icon.png" alt="logo" srcset="images/weather-icon.png" >
+        <section class="headings">
+            <h1 id="site-title">How is the weather today</h1>
+            <div class="motto">The precise forecast</div>
+            </section>
+    </header>
+   
+        <nav>
+            <button onclick="toggleMenu()">&#9776</button>
+            <ul id="primaryNav" class="hide">
+
+            <li><a href=index.html>Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li ><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+</div>
+    <section id="friday-banner">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+
+    <h1 class="site-title" id="preston-title" >Preston Idaho</h1>
+    
+    <picture class="preston-img">
+                   
+        <img id="preston-image" src="images/preston original.jpg"  alt="Preston Mountains landscape">
+               
+     
+                        </picture>
+    <section class="wave">
+        <div class="wave-section"></div>
+    </section>
+
+    <main>
+    
+        <div class="pages-section">
+            
+            <section class="current-weather">
+                <h2>Weather Summary</h2>
+                <p>Currently :  <span id="current-2"></span>&nbsp;&nbsp;<span id="current-temp"></span>&deg;F</p>
+                
+                <p>High: <span id="high-temp">32</span>&deg;F</p>
+                <p>Wind Chill:&nbsp;<span id="windChillOutput"></span> </p>
+                <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
+                <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
+            </section>
+  
+        <h1 id="forecast-title">Five Day Forecast</h1>
+   
+        <section class="forecast">
+            
+            <div class="forecast-day">
+             <p ><span id="dayofWeek1"></span></p>
+             <img src="" alt="" id="icon1"> 
+             <p><span id="fiveDayForecast1"></span>&deg;F</p>
+            </div>
+
+            <div class="forecast-day">
+             <p ><span id="dayofWeek2"></span></p>
+             <img src="" alt="" id="icon2"> 
+             <p >  <span id="fiveDayForecast2"></span>&deg;F</p>
+               
+            </div>
+             <div class="forecast-day">
+             <p ><span id="dayofWeek3"></span></p>
+             <img src="" alt="" id="icon3"> 
+             <p ><span id="fiveDayForecast3"></span>&deg;F</p>
+            </div> 
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek4"></span></p>
+             <img src="" alt="" id="icon4">
+             <p ><span id="fiveDayForecast4"></span>&deg;F</p>
+            </div> 
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek5"></span></p>
+             <img src="" alt="" id="icon5"> 
+             <p><span id="fiveDayForecast5"></span>&deg;F</p>
+            </div>
+           
+             
+          
+            
+    </section>
+    <h1 id="events-title">Upcoming Events</h1>
+    <div id="events"></div>
+    
+    <section class="article-section">
+        <div class="article-city">
+            <img class="article-image" id="preston-article-image" src="images/preston-article.jpg" alt="kids under the rain">
+            
+            <h1 class="article-title ">Preston is a vacationer’s dream</h1>  <p class="author">by Saundra Hubbard from the Preston Citizen</p> 
+            <p>Winter brings the best snow and the most beautiful winter scenery. Snowmobiling and cross country skiing is great. You can travel down Mink Creek, Cub River, and even Logan Canyon and see the most beautiful winter wonderland ever, ending up at Bloomington or Bear Lake.
+                Spring brings golfing at our 18-hole course, floating and kayaking down the beautiful Bear River, as well as fishing, boating, water-skiing or just camping at our 10 reservoirs. There are three swimming resorts close by and also a new swimming pool in town.    
+                In June, the Elks Demolition Derby is in the arena. The next weekend, we leave Preston City and go south to Franklin for Idaho Days, which is a celebration of the oldest city in Idaho, with a weekend of parades, games and good food. On July 24, our rodeo arena becomes a lighted celebration with the Rotary Club’s Fireworks Extravaganza, and the next weekend it’s That Famous Preston Night Rodeo, sidewalk sales, chuck wagon breakfasts, and the biathlon. There’s team branding, team penning, team roping, and on Friday, something new is being planned that will be fun for the whole family. Come Saturday, there’s the Famous Bull Bonanza and the Wild Cow Milking Contest. August brings the Franklin County Fair, which is always full of things to do.
+                November is the month for the Festival of Lights, starting the day after Thanksgiving. Friday evening there are fireworks and the Lighted Parade. On Saturday, we have the bed races down State Street, followed by the Children’s Parade. There are also fireworks and a parade Saturday evening. </br> </br>Original Article on <a class="links" href="https://prestonchamber.org/community/recreation/">Preston Chamber Area</a></p>
+        </div>
+           
+    </section>
+    <h1 id="contact-title">Contact information</h1>
+    <section class="contact-section">
+     
+        <div class="map">
+            <iframe class= "preston-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47359.8878046865!2d-111.91122878982105!3d42.10762099205315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1654137597903!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="preston map"></iframe>
+        </div>
+        <div class="contact">
+            
+            <div class= "contact-group">
+            <img class="contact-icons" src="images/location.png" alt="location-icon">
+            <p >49 N State St Ste 102, Preston, ID</p> 
+            </div>
+            <div class= "contact-group">
+            <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+            <p>000-111-222</p>
+            </div>
+            <div class= "contact-group">
+            <img class="contact-icons"src="images/email.png" alt="email-icon" >
+            <p> howishtheweathertoday@info.com</p>
+            </div>
+            <div class= "contact-group">
+                <a href="https://www.facebook.com/" >
+                <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/">
+                <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
+                </a>
+            </div>
+                </div> 
+           
+    
+         
+    </section>
+</div>
+    </main>
+    <footer>
+        <p class="footer-text">&copy; <span id="date"></span> | <a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
+           
+         </footer>
+            <script src="JS/script.js"> </script>
+            
+           <script> currentW('5604473');
+            forecast('5604473');
+            getEvents("Preston");</script>
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+            </script>
+
+      
+    
+</body>
+</html>

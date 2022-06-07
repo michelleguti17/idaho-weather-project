@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>How is the weather today</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="CSS/small.css"/>
+    <link rel="stylesheet" href="CSS/medium.css"/>
+    <link rel="stylesheet" href="CSS/large.css"/>
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+</head>
+<body>
+    <div class="city-body">
+    <header class="clearfix"> 
+        
+        <img id=logo src="images/weather-icon.png" alt="logo" srcset="images/weather-icon.png" >
+         
+
+        <section class="headings">
+            <h1 id="site-title">How is the weather today</h1>
+            <div class="motto">The precise forecast</div>
+        </section>
+    </header>
+
+        <nav>
+            <button onclick="toggleMenu()">&#9776</button>
+            <ul id="primaryNav" class="hide">
+
+            <li><a href=index.html>Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class ="active"><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="storm-center.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            
+        </ul>
+    </nav>
+</div>
+    <section id="friday-banner">
+        <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </section>
+    <h1 id="soda-title" class="site-title">Soda Springs Idaho</h1>
+   
+    <div class="pages-section">
+        <picture class="soda-img">
+          
+        <img id="soda-image" src="images/sodasprings.jpg"  alt="Soda-Springs mountains and lagoon landscape">
+       
+         </picture>
+    <section class="wave">
+        <div class="wave-section"></div>
+    </section>
+    <main>
+        <div class="pages-section">
+            
+        <section class="current-weather" id="current-soda">
+            <h2>Weather Summary</h2>
+            <p>Currently :  <span id="current-2"></span>&nbsp;&nbsp;<span id="current-temp"></span>&deg;F</p>  
+            <p>High: <span id="high-temp">32</span>&deg;F</p>
+            <p>Wind Chill:&nbsp;<span id="windChillOutput"></span> </p>
+            <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
+            <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
+        </section>
+    
+
+        <h1 id="forecast-title">Five Day Forecast</h1>
+        <section class="forecast">
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek1"></span></p>
+             <img src="" alt="" id="icon1"> 
+             <p><span id="fiveDayForecast1"></span>&deg;F</p>
+            </div>
+
+            <div class="forecast-day">
+             <p ><span id="dayofWeek2"></span></p>
+             <img src="" alt="" id="icon2"> 
+             <p >  <span id="fiveDayForecast2"></span>&deg;F</p>
+               
+            </div>
+             <div class="forecast-day">
+             <p ><span id="dayofWeek3"></span></p>
+             <img src="" alt="" id="icon3"> 
+             <p ><span id="fiveDayForecast3"></span>&deg;F</p>
+            </div> 
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek4"></span></p>
+             <img src="" alt="" id="icon4">
+             <p ><span id="fiveDayForecast4"></span>&deg;F</p>
+            </div> 
+           
+            <div class="forecast-day">
+             <p ><span id="dayofWeek5"></span></p>
+             <img src="" alt="" id="icon5"> 
+             <p><span id="fiveDayForecast5"></span>&deg;F</p>
+            </div>
+           
+             
+          
+      
+        </section>
+        <h1 id="events-title">Upcoming Events</h1>
+        <div id="events"></div>
+        
+        <section class="article-section">
+            <div class="article-city">
+                <img class="article-image" id= "soda-article-image" src="images/watersodasprings.jpg" alt="soda springs water eruption manantial">
+                
+                <h1 class="article-title ">Soda Springs has the only captive geyser in the world. </h1>  
+                <p>Soda Springs is famous for its Geyser as well as the several mineral springs, Octagon Springs, Hooper Springs and Lover's Delight. In 1937, local businessmen set out to find hot water for a commercial bathhouse and health resort. On Nov. 28 of that year, the drill struck a carbon dioxide gas chamber 315 feet underground. Hot water soon began shooting out of the ground to more than 45 feet in the air. Once the 3,500-pound drill bit was removed, the water shot even higher to more than 70 feet.  The Soda Springs Geyser was born. After a few weeks, the city received a telegram from the Secretary of the Interior asking them to turn the geyser off because “… it is throwing the world-famous ‘Old Faithful Geyser’ off schedule.”
+
+                    The City of Soda Springs has the geyser set on a timer to go off every hour on the hour. You can see the Geyser today blow 70 feet into the air and hear it roar "Like a mad dragon," as described by one of the developers in 1937. The Geyser is open to the public year round, no fees. </br> </br>Original Article on <a class="links" href="https://www.sodaspringsid.com/recreation/geyser_park/index.php/"> City of Soda Srpings </a></p>
+            </div>
+               
+        </section>
+    
+        <h1 id="contact-title">Contact information</h1>
+             <div class="contact-section">
+
+                <div>
+                    <iframe class= "preston-map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20Idaho%2083276%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1654634680024!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  alt="soda springs map"></iframe>
+           
+                </div>
+                <div class="contact">
+                    
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/location.png" alt="location-icon">
+                    <p >49 N State St Ste 102, Preston, ID</p> 
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/telephone.png" alt="telephone-icon">
+                    <p>000-111-222</p>
+                    </div>
+                    <div class= "contact-group">
+                    <img class="contact-icons" src="images/email.png" alt="email-icon" >
+                    <p> howishtheweathertoday@info.com</p>
+                    </div>
+                    <div class= "contact-group">
+                        <a href="https://www.facebook.com/" >
+                        <img id="facebook" src= "images/facebook icon.png" alt="Facebook Icon"></a>
+                        <a href="https://www.instagram.com/">
+                        <img id="instagram" src= "images/instagram.png" alt="Instagram Icon">
+                        </a>
+                    </div>
+                        </div> 
+                   
+            
+                 
+                    </div>
+        </div>
+
+        </main>
+        <footer>
+            <p class="footer-text">&copy; <span id="date"></span> | <a class="links" href="index.html">How is the weather today</a> | Ecuador | Michelle Gutiérrez </p>  
+               
+             </footer>
+            <script src="JS/script.js"></script>
+            <script> currentW('5607916');
+                forecast('5607916');
+                getEvents("Soda Springs");</script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({ google: { families: ['Merriweather Sans, Source Sans Pro ']}});
+
+            </script>
+      
+    
+</body>
+</html>

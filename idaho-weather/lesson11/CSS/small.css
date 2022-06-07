@@ -1,0 +1,814 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+
+body{
+    margin: 0 auto;
+    
+    /*background-color: #a3daff;*/
+    /*background-image: linear-gradient( #2ea5fa,#06E2F5);*/
+   
+}
+.gradient-background {
+    height:400px;
+    position: relative;
+ 
+    
+ background-image: linear-gradient(to right, #3b9cd8, #00a7cf, #cec76b,  #f7abaf,#1b85c7,#3b9cd8);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+}
+@keyframes gradients {
+    0% { background-position: 0  0; }
+   25% { background-position:50% 0; }
+   50% { background-position:90% 0; }
+   60% { background-position:60%;   }
+   75% { background-position:40%;   }
+  100% { background-position: 0  0; }
+}
+header  {
+    
+    padding: 5px 0;
+	display: flex;
+    color: #FFFFFA;
+
+   align-content:center;
+	justify-content:center;
+
+
+    }
+ .city-body, footer{
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+ }   
+
+
+#logo {
+	width:10%;
+    height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+    margin: 0 0 0 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+   text-align: center;
+    color :#FFFFFA;
+    margin-top: 0.3em;
+}
+
+.motto {
+    font-family:'Source Sans Pro', sans-serif;
+    font-style:italic;
+	letter-spacing: 1pt;
+    color :#FFFFFA;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+
+
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color: #fff;
+    
+}
+
+nav{
+
+
+    position: relative;
+    z-index: 2;
+
+    padding:10px;
+   margin-top: -1em;
+   font-family: 'Merriweather Sans', sans-serif;
+   font-size: 18px;
+
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #FFFFFA;
+    border-top:1px solid rgba(0,0,0,0.3);
+    
+    
+}
+nav ul li.active a{ border-radius: 5px; background-color:  rgba(39, 36, 36, 0.2); color:#fff;}
+
+nav ul li a:hover{
+    text-decoration: underline #FFFFFA;
+    color:#1b85c7 ;
+    
+    
+}
+
+nav ul.hide{
+    display:none;
+}
+
+
+
+main {
+    margin:0 auto;
+    background-color: white;
+
+}
+
+.wave{
+    width:100%;
+    
+    position: relative;
+
+}
+.wave:before{
+   content: '';
+   position:absolute;
+  
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height:100px;
+   background:url(/lesson11/images/wave.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+
+.site-title  {
+    display: flex;
+    position:absolute;
+    font-size: 30px;
+    color: #FFFFFA;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 1.5em;
+    z-index: 2;
+    left:5%;
+    width:45%;
+   }
+
+
+  #idaho-home{
+  position: absolute;
+
+ width:100%;
+  height:250px;
+  max-width:160px; 
+ z-index: 2;
+ border-radius:25px;
+ 
+  }
+.border-photo{
+    left:45%;
+    display: flex;
+     position:absolute; 
+     z-index:1;
+    width:160px; 
+    height:250px; 
+    margin:20px; 
+ 
+    border-radius:20px;
+    background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                        rgba(246, 246, 246, 1) 29.62%, 
+                                        rgba(234, 234, 234, 1) 58.47%, 
+                                        rgba(215, 215, 215, 1) 86.92%, 
+                                        rgba(204, 204, 204, 1) 99.22%); 
+    box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25);  
+  }
+
+
+
+/*PRESTON - SODA SPRINGS - FISH HAVEN BASIC PAGES*/
+ 
+.pages-section {margin: 10px auto;
+   margin-top: -2em;
+    position: relative;
+    /*background-image: linear-gradient( #1499f8,#1C9CF6 , #48b3ff);*/
+    }
+
+.preston-img img , .fish-img img {
+  
+   position: relative;
+  transform: scale(1.02);
+    width:100%;
+    padding: 0;
+ 
+  
+
+}
+
+.soda-img img{
+    
+   position: relative;
+    transform: scale(1.02);
+    width:100%;
+    padding: 0;
+    margin-top: 2em;
+  
+     
+   }
+   #current-soda{
+      top: -11%;
+   }
+
+   #current-fish{
+    top: -9%;
+ }
+#title {margin: 0;
+    margin-top: 0.7em;
+    padding:20px;
+    font-size: 48px; color:#1b85c7;
+    font-family: 'Merriweather Sans', sans-serif;
+text-align: center;}
+
+#title-gallery {margin: 0;
+        margin-top: 1em;
+        margin-left: 1em;
+        padding:10px;
+        color:#FFFFFA;
+        font-family: 'Merriweather Sans', sans-serif;}
+
+/*.current-weather {
+	position: absolute;
+    border: 3px  solid;
+    border-color:#1C9CF6 ;
+     top: 20px;
+     left: 10px;
+     color:#043869;
+     opacity: .92;
+     font-size: 10px;
+     background-color:#fcfbf6;
+     max-width:100%;
+     padding: 5px;
+     font-family:'Source Sans Pro', sans-serif; 
+     max-height: 100%;
+  
+     
+}*/
+.all-weather{
+    display: flex;
+    flex-direction: row;
+}
+#cities-nav ul li a{
+    color: #FFFFFA;
+}
+
+.current-weather{
+    position: absolute;
+    top:-10%;
+     left: 62%;
+     
+     max-width:300px;
+     height:140px;
+     margin: 0 auto;
+    text-align: center;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#1b85c7;
+     padding: 5px;
+     font-family:'Source Sans Pro', sans-serif; 
+     max-height: 100%;
+   font-size: 10px;
+   z-index: 2;
+   border-radius:20px;
+   background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                       rgba(246, 246, 246, 1) 29.62%, 
+                                       rgba(234, 234, 234, 1) 58.47%, 
+                                       rgba(215, 215, 215, 1) 86.92%, 
+                                       rgba(204, 204, 204, 1) 99.22%); 
+   box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+
+}
+
+.current-weather p {
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+ 
+}
+.current-weather h2 {
+   
+    font-size: 14px;
+    margin-top: 1em;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #043869;
+
+ 
+}
+
+
+
+
+ #idaho-home{
+    width: 100%;
+    padding:10px;
+}
+
+
+#forecast-title {
+  margin-top: 3em;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #1b85c7;
+  
+}
+
+.forecast{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    
+    padding:10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2em;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    
+    max-width:85%;
+    border-radius:20px;
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+   /* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                        rgba(246, 246, 246, 1) 29.62%, 
+                                        rgba(234, 234, 234, 1) 58.47%, 
+                                        rgba(215, 215, 215, 1) 86.92%, 
+                                        rgba(204, 204, 204, 1) 99.22%); */
+    box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+    }
+    
+    
+    
+    
+    .forecast-day img{
+       
+       margin-top: -10em;
+        margin: 0 auto;
+      
+    }
+
+#events-title{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #1b85c7;
+    
+  }
+
+/*#events {
+    
+
+ background-color: #48b3ff;
+border: 4px solid;
+border-color: #0963b8;
+padding:10px;
+margin: 0 auto;
+text-align: center;
+margin-top: 2em;
+font-family:'Source Sans Pro', sans-serif;
+color:#FFFFFA;
+width:400px;
+max-width:100%;
+  }*/
+
+  #events{
+
+  top: 14%;
+   left: 55%;
+   max-width:300px;
+  
+   margin: 0 auto;
+  text-align: center;
+  color:#FFFFFA;;
+   padding: 5px;
+   font-family:'Source Sans Pro', sans-serif; 
+   max-height: 100%;
+
+ z-index: 2;
+ border-radius:20px;
+ background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+ background-size: 600%;
+ background-position: 0 0;
+ animation-duration: 20s;
+ animation-iteration-count: infinite;
+ animation-name: gradients;
+/* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                     rgba(246, 246, 246, 1) 29.62%, 
+                                     rgba(234, 234, 234, 1) 58.47%, 
+                                     rgba(215, 215, 215, 1) 86.92%, 
+                                     rgba(204, 204, 204, 1) 99.22%); */
+ box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+}
+  .article-section{
+    
+    margin: 10px auto;
+    position:static;
+    color:#FFFFFA;
+    
+    margin-top:3em;
+    width:100%;
+    padding: 25px;
+    
+   
+   
+
+}
+.article{
+padding:10px;
+background-image: linear-gradient( #1b85c7,#269ce6 ,#1C9CF6 );
+border-radius: 20px;
+font-family:'Source Sans Pro', sans-serif; 
+box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+}
+
+.article-city{
+    font-family:'Source Sans Pro', sans-serif; 
+    padding:25px;
+    border-radius:20px;
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+   /* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                        rgba(246, 246, 246, 1) 29.62%, 
+                                        rgba(234, 234, 234, 1) 58.47%, 
+                                        rgba(215, 215, 215, 1) 86.92%, 
+                                        rgba(204, 204, 204, 1) 99.22%); */
+    box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+}
+
+.article h1, .author{
+    color: #FFFFFA;
+}
+
+.article-image{
+
+   
+    border-radius:20px;
+    padding:8px;
+    width: 100%;
+    height: 100%;
+    margin-top: 3em;
+  
+}
+#soda-article-image{
+    width: 100%;
+    margin-top: 1em;
+}
+
+
+
+  .preston-map{
+    width:300px;
+    margin-left:2em;
+    border-radius: 20px;
+  }
+#contact-title{
+    margin-top: 2em;
+  
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #1b85c7;
+ 
+      
+    
+}
+
+  
+
+.contact {
+    
+     height:210px;
+    margin: 10px auto;
+  
+    color:#1b85c7;
+    font-family:'Source Sans Pro', sans-serif; 
+  
+    width:100%;
+
+}
+
+
+
+
+.contact p{
+    margin-left:0.5em;
+   
+}
+
+#instagram{
+ padding-left: 10px;   
+}
+
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+
+}
+
+#byuLink{
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+#friday-banner{
+    display:none;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 20px;
+   height:50px;
+   text-align: center;
+      background-image: linear-gradient( #1b85c7,#269ce6 ,#1C9CF6 );
+    color: #FFFFFA;
+}
+  footer  {
+   
+    padding: 5px 0;
+    margin: auto;
+    text-align: center;
+  
+    }
+    footer p {
+        font-family: 'Merriweather Sans', sans-serif;
+        color:#FFFFFA;
+        
+        }
+.links{
+            font-family:'Source Sans Pro', sans-serif;
+            color: #FFFFFA;
+        }
+        
+.links:hover{
+            
+background-color: #1b85c7;
+color:#FFFFFA;
+        }
+.clearfix:after {
+     content: "";
+    display: table;
+     clear: both;
+ }
+
+ /*GALLERY*/
+ .preston-gallery {margin: 1rem auto;
+    display:grid;
+     grid-template-columns: 1fr; 
+     grid-gap: 20px;
+     max-width: 560px;}
+
+
+
+picture img { 
+    width: 100%;
+    height: auto; 
+    margin: 0 auto; }
+
+     figcaption{
+       font-family: 'Merriweather Sans', sans-serif;
+       font-size:16px;
+       color: #1b85c7;
+       padding-left: 10px;
+      
+     }
+     picture img[data-src] {
+        filter: blur(0.2em);
+     
+       
+      }
+      
+     picture img {
+        filter: blur(0em);
+        transition: filter 0.1s;
+   
+        padding: 10px;
+        border-radius: 20px;
+      }
+
+      
+    
+    
+  /*FORM AND THANK YOU PAGE*/  
+
+  .title-page{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #1b85c7;
+    
+}
+
+
+  form{
+      border-radius: 20px;
+     font-size: 16px;
+    padding:10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#FFFFFA;
+    width:100%;
+    background-image: #fffffa;
+  border:none;
+}
+form h2{
+    font-size: 20px;
+    margin-top: -0.1em;
+}
+#comment-h2{
+    margin-top: 1em;
+}
+fieldset{
+    
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+   /* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                        rgba(246, 246, 246, 1) 29.62%, 
+                                        rgba(234, 234, 234, 1) 58.47%, 
+                                        rgba(215, 215, 215, 1) 86.92%, 
+                                        rgba(204, 204, 204, 1) 99.22%); */
+    box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+    border: none;
+   
+}
+
+.form-input{
+    padding:10px;
+    border: 3px solid;
+    border-radius: 20px;
+    border-color:#FFFFFA;
+    margin-top: 1em;
+}
+
+input{
+    border-radius: 15px;
+    display:flex;
+    padding:15px;
+    margin-top: 0.5em;
+    
+}
+
+
+
+
+#region, #rating-list {
+    margin-top: 1.5em;
+}
+
+
+#rating{
+    color:#FFFFFA;
+    padding:10px;
+   background-color: #FFCD00;
+   width:100%;
+   max-width:300px;
+}
+
+#ratingvalue{
+    font-size: 16px;
+    
+}
+
+#comment{
+    border-radius: 15px;
+    width:100%;
+    height:170px;
+    border:none;
+    
+}
+
+
+.button {
+    
+    width: 85px;
+    height:35px;
+    font-size: 18px;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    background-color: #1878b4;
+    border:none;
+    margin: auto 0;
+    margin-top: 1em;
+    padding:5px;
+    justify-content: center;
+    
+}
+
+.button:hover{
+ text-decoration: underline #FFFFFA;
+}
+ 
+#thank-you{
+    background-color: #FFFFFA;
+    border: 5px solid;
+    border-radius: 20px;
+    border-color:#1b85c7;
+    padding:10px;
+    margin: auto 0;
+     text-align: center;
+     margin-top: 4em;
+     font-family:'Source Sans Pro', sans-serif;
+     color:#1b85c7;
+     width:100%;
+}
+
+/*HOME PAGE*/
+div.places{
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+   margin: 0 auto;
+   padding:10px;
+}
+
+.cities-title{
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    margin-top: 1.5em;
+    color: #1b85c7;
+
+}
+
+.info h2{
+font-family: 'Merriweather Sans', sans-serif;
+color:  #1b85c7;
+font-size: xx-large;
+text-align: center;
+}
+
+.info p{
+    font-family: 'Merriweather Sans', sans-serif;
+color: #2e278b;
+text-align: center;
+padding: -4em;
+}
+
+
+.places h2 p {
+    color: #005DB3;
+}
+
+.town img {
+border-radius:50%;
+width: 60%; 
+transform: scale(1);
+display: flex;
+height: 200px; 
+margin: 0 auto;
+z-index: 1;
+/*box-shadow: 8px 8px 4px #7e9dcf;*/
+  
+}
+
+
+h3{
+font-style: italic;
+font-family:'Source Sans Pro', sans-serif;
+color: #005DB3;
+text-align: center;
+font-size: 16px;
+
+}
+
+
+
+
